@@ -25,7 +25,7 @@ mikhailov_egor
 
 #%% md
 
-### Создание нового репозитория как клон удвленного
+### Создание нового репозитория как клон удленного
 На сайте github.com создаем новый репозитрий. После этого выхcaодит инстукция
 echo "# data_analitics" >> README.md
 git clone it@github.com:barsuk2/data_analitics.git project - указание папки на лок компьютере
@@ -35,7 +35,7 @@ git clone it@github.com:barsuk2/data_analitics.git project - указание п
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin git@github.com:barsuk2/algorithms.git
+git remote add origin git@github.com:barsuk2/second-site.git
 git push -u origin master
 
 
