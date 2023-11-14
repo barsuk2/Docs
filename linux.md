@@ -358,9 +358,11 @@ source ~/.bashrc
 #### nc - NetCat аналог telnet
 
 
-### службы
+### службы и сервисы
 
 sudo systemctl list-units --type service
+sudo service redis-server status
+
 
 service nginx stop
 
@@ -368,4 +370,9 @@ service nginx stop
 https://zalinux.ru/?p=3193
 ss список
 
+
+### сетевые дела
+
+Кто работает на заданном порту
+sudo netstat -pna | grep 6379
 

@@ -1,8 +1,8 @@
-# docker
+ker# docker
 ### images - посмотреть image
 >docker images
 удалить none имиджы
->docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 ### images - посмотреть контейнеры
 >docker ps - активные
 >docker ps -a - все
@@ -62,6 +62,8 @@ sudo docker cp wwi.bak sql1:/var/opt/mssql/backup
 docker run -i -t debian /bin/bash- запустить shell использую контейнер debian
 docker run -h CONTAINER -i -t debian /bin/bash -зададим имя хоста
 docker inspect nifty_hellman - подробна информаци  о контейнере
+docker inspect youthful_swanson --format '{{json .NetworkSettings.Networks}}' - вывод куста
+
 docker diff nifty_hellman - сравние, какие папки была изменены в работающем еонтейнере
 docker logs nifty_hellman - список всех событий в контейнере
 docker ps -aq -f status=exited - спсиок id всех остановленных контейнеров.
@@ -152,4 +154,90 @@ logs- выво
 run одноразовый запуск
 rm - удалилить все остановленные контейнеры
 stop - остановка контейнеров без из остановки
+down - останвливает контейер и удаляет.
+
+### bind mount
+
+FROM python:3.10
+- при данной конфигурации создается в корне контейнера толоко /app
+
+- запускаем контейнер с волюмом bind mount
+- docker run --rm -p 5000:5000 -v "$(pwd)"/app:/app flask_dock
+LABEL authors="egor"
+RUN pip install Flask
+WORKDIR /app
+
+COPY app /app
+
+CMD ["python", "main.py"]
+
+### exec
+
+В работающес конейнере можно выполнить команду
+vj,bNfnvj,rpfymcgjhnabny
+docker exec dock_comp_nginx_1 ls -al /usr/share/nginx/html
+
+### коприровать из конейнера
+
+
+### Запуск nginx
+docker run --rm -p 8000:80  -v $(pwd):/usr/share/nginx/html nginx - в Dock_Comp лежит html
+
++### docker-compose
+ 
++####тесты при запускё
+ 
++    healthcheck:
++      test: ["CMD", "curl", "http://localhost:5000/"]
++      interval: 20s
++      retries: 5
++      start_period
+
+
+### vulums
+docker volume create example-volume - создать
+docker ls -список волумов
+docker volume ls --filter="name=ex" - фильтрация
+
+docker volume rm asdasd - удалить том
+docker volume inspect dasd - посмотреть инфу, например точку монтирования
+
+### network
+docker network ls -спсиок сетей
+
+
+### logs
+
+docker-compose logs --follow - выводить генерируемы сообщения
+
+-ker# docker
++kerker# docker
+ ### images - посмотреть image
+ >docker images
+ удалить none имиджы
+@@ -171,7 +171,7 @@
+ 
+ CMD ["python", "main.py"]
+ 
+-### exec
+
+ 
+ В работающес конейнере можно выполнить команду
+
+ ### logs
+ 
+ docker-compose logs --follow - выводить генерируемы сообщения
+-
+-
++docker-compose top - список запущенных процессов
++docker-compose events -события
++docker-compose config - вывод текущий конфигурации compose
++docker-compose config --services - вывод сервисов
++docker-compose config --volumes - т
+
+
+### postgresql
+#### pgbounser docker
+https://hub.docker.com/r/edoburu/pgbouncer/
+
 
