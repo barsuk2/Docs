@@ -219,12 +219,12 @@ docker-compose logs --follow - выводить генерируемы сооб�
  
  CMD ["python", "main.py"]
  
--### exec
+### exec
 
  
  В работающес конейнере можно выполнить команду
 
- ### logs
+### logs
  
  docker-compose logs --follow - выводить генерируемы сообщения
 -
@@ -240,4 +240,15 @@ docker-compose logs --follow - выводить генерируемы сооб�
 #### pgbounser docker
 https://hub.docker.com/r/edoburu/pgbouncer/
 
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres:14 -
+
+docker exec -it some-postgres psql -U postgres
+
+docker run --name habr-pg-13.3 -p 5432:5432 -e POSTGRES_USER=habrpguser -e POSTGRES_PASSWORD=pgpwd4habr -e POSTGRES_DB=habrdb -d postgres:13.3
+
+docker exec -it some-postgres psql -U habrpguser 
+
+ENV POSTGRES_USER=habrpguser - создает юзера БД в место классического postgresq
+ENV POSTGRES_PASSWORD=pgpwd4habr - его пароль
+ENV POSTGRES_DB=habrdb - новая БД
 
