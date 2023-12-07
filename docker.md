@@ -1,4 +1,4 @@
-ker# docker
+# docker
 ### images - посмотреть image
 >docker images
 удалить none имиджы
@@ -31,6 +31,9 @@ docker run -d hello --name hello --rm - запуск в фоне,удалить 
 сисок волумов
 >http://172.17.0.2:5000 
 
+### удалить и оствновить все контейеры
+docker system prune
+
 создать волум
 >docker volume create web
 
@@ -45,8 +48,7 @@ docker pull busybox - згрузит контейнер с хаба
 docker-compose -f docker-compose.dev.yml f docker-compose.yml up --build - последовательный запуск yaml
 
 
-sudo docker exec -it sql1 /opt/mssql-tools/bin/sqlcmd -S localhost \
-   -U SA -P '35Bfx140' \
+sudo docker exec -it sql1 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '35Bfx140' \
    -Q 'RESTORE FILELISTONLY FROM DISK = "/var/opt/mssql/backup/BD_backup"' \
    | tr -s ' ' | cut -d ' ' -f 1-2
    
@@ -54,6 +56,7 @@ sudo docker exec -it sql1 /opt/mssql-tools/bin/sqlcmd -S localhost \
   
 ### запуск шелл в контейере
 sudo docker exec -it sql1 "bash" 
+sudo docker exec -it sql1 sh
 
 ### коприровать в контейнер
 sudo docker cp wwi.bak sql1:/var/opt/mssql/backup
@@ -68,11 +71,11 @@ docker diff nifty_hellman - сравние, какие папки была из�
 docker logs nifty_hellman - список всех событий в контейнере
 docker ps -aq -f status=exited - спсиок id всех остановленных контейнеров.
 ### удалить контейнер
-docker rm -v $(docker ps -aq -f status=exited) - удалить все контейнеры с по списку ID
+docker rm -v $(docker ps -aq -f status=exited) - удалить все контейнеры с по списку ID и их тома
 
 ### Удалить image
 
-docker images -f dangling=true - получить непоименованные
+docker images -q -f dangling=true - получить непоименованные по id
  docker rmi test/coweay-dockerfile:latest
  docker rmi 10fcec6d95c4
  
@@ -193,10 +196,13 @@ docker run --rm -p 8000:80  -v $(pwd):/usr/share/nginx/html nginx - в Dock_Comp
 +      retries: 5
 +      start_period
 
+docker-compose down -v удалить и волумы
+### спмсок команд
+docker exec -it db_ps psql -U test
+
 
 ### vulums
 docker volume create example-volume - создать
-docker ls -список волумов
 docker volume ls --filter="name=ex" - фильтрация
 
 docker volume rm asdasd - удалить том
@@ -222,7 +228,7 @@ docker-compose logs --follow - выводить генерируемы сооб�
 ### exec
 
  
- В работающес конейнере можно выполнить команду
+В работающес конейнере можно выполнить команду
 
 ### logs
  
@@ -238,7 +244,7 @@ docker-compose logs --follow - выводить генерируемы сооб�
 
 ### postgresql
 #### pgbounser docker
-https://hub.docker.com/r/edoburu/pgbouncer/
+*https://hub.docker.com/r/edoburu/pgbouncer/*
 
 docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres:14 -
 
@@ -248,7 +254,15 @@ docker run --name habr-pg-13.3 -p 5432:5432 -e POSTGRES_USER=habrpguser -e POSTG
 
 docker exec -it some-postgres psql -U habrpguser 
 
+*https://habr.com/ru/articles/578744/*
 ENV POSTGRES_USER=habrpguser - создает юзера БД в место классического postgresq
 ENV POSTGRES_PASSWORD=pgpwd4habr - его пароль
 ENV POSTGRES_DB=habrdb - новая БД
+DB и USER не работают вместе
+
+
+### спмсок команд
+docker exec -it db_ps psql -U test
+
+18353286e082 mp_kasud_redis_1
 
