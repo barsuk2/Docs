@@ -128,11 +128,18 @@ cd kafka_2.13-2.7.0
 
 ./bin/zookeeper-server-start.sh config/zookeeper.properties
 Запускаем брокер Кафки
+./bin/kafka-server-start.sh config/server.properties
+
 ### создание
 ./kafka-topics.sh --create --topic registrations --bootstrap-server localhost:9092
+
 ### информация о топике
 ./kafka-topics.sh --describe --topic registrations --bootstrap-server localhost:9092
-### отрпаить сообщене в топик
+
+#### список топиков
+./kafka-topics.sh --list --bootstrap-server localhost:9092
+
+### отпрааить сообщене в топик
 ./kafka-console-producer.sh --topic registrations --bootstrap-server localhost:9092
 
 #### читать из топика
@@ -149,6 +156,80 @@ cd kafka_2.13-2.7.0
 ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group slurm --describe
 
 #### сбросить offset на начало
-./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group slurm --to-earliest --reset-offsets --execute --topic registrations
+./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group slurm --to-earliest --reset-offsets --execute --topic registrations
 
 
+#### Retension
+
+редактируем конфиг для запуска Кафка
+./kafka-configs.sh --bootstrap-server localhost:9092 --entity-type topics --entity-name registrations --alter --add-config retention.ms=60000
+мы устанавлиаем время жизни сообщения 60000 ms. 
+
+Очистка топика
+Итак, мы успешно записали и прочитали сообщения, давайте посмотрим на механизм ретеншена.
+
+./bin/kafka-topics.sh --describe --topic registrations --bootstrap-server localhost:9092
+По умолчанию Кафка проверяет, нужно ли удалить данные по ретеншену каждые 5 минут. Давайте сделаем этот интервал меньше — каждую секунду.
+
+Остановим брокер Кафки и открываем файл на редактирование:
+
+vi config/server.properties
+И выставляем там нужное значение:
+
+log.retention.check.interval.ms=1000
+После этого запускаем снова брокер.
+
+Давайте теперь скажем Кафке, что мы хотим удалять сообщения после одной минуты:
+
+./bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type topics --entity-name registrations --alter --add-config retention.ms=60000
+Запустив заново консьюмера мы увидим, что сообщения действительно удалились. В логе видим “Found deletable segments with base offsets”.
+
+Давайте поподробнее разберем этот момент. Повторим эксперимент, слегка изменив настройки. 
+
+Скажем Кафке удалять данные после 10 секунд:
+
+./bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type topics --entity-name registrations --alter --add-config retention.ms=10000
+А теперь запустим продюсера писать сообщения в цикле.
+
+В одном терминале запустим вот такую конструкцию:
+
+touch /tmp/data && tail -f -n0 /tmp/data | ./bin/kafka-console-producer.sh --topic registrations --bootstrap-server=localhost:9092 --sync
+А во втором терминале - вот такую:
+
+for i in $(seq 1 3600); do echo "test${i}" >> /tmp/data; sleep 1; done
+Читая сообщения спустя минуту, мы по-прежнему видим старые сообщения!
+
+./bin/kafka-console-consumer.sh --topic registrations --bootstrap-server localhost:9092 --consumer-property auto.offset.reset=earliest
+Для того чтобы понять, что происходит, мы должны разобраться во внутренней структуре данных партиции. 
+
+
+#### хранее данных
+
+данные храянмятся в сегментах. Все записывается в гл=оловной сигмент
+log cleanrt удаялет фалй целиком
+segments.ms - период ролапа сегмента после открытия
+
+#### НАстройки Кафки
+Большая часть настройек может быть опроеделев на 2-х уровнях
+broker-level config уровень серервера, Используется по-умолчанию (ghtabrc log)
+
+topic level config - оверрайды для отдельных топиков, имею более высокий приоретет
+log.retentiob/ns - глбальный дефолт для всех топиков, задается в server.property
+полный перечень настроек https://kafka.apache.org/documentation/#configuration
+Очистка топика (продолжение)
+Заглянув в папку с данными, видим активный сегмент (а также старые сегменты, помеченные как “deleted”).
+
+ls -la /tmp/kafka-logs/registrations-0
+Выставим более частую ротацию нашему топику, раз в 10 секунд:
+
+./bin/kafka-configs.sh --bootstrap-server localhost:9092 --entity-type topics --entity-name registrations --alter --add-config segment.ms=10000
+Теперь мы видим ротацию сегмента в логе.
+
+И через некоторое время увидим что данные удалились - благодаря удалению ротированного сегмента.
+
+
+
+#### log compaction еще один механизм удаления 
+Этот механизм использует ключи чтобы рашить удалять или нет
+log compaction применяеться для очистка определенных ключей. Процед
+удин

@@ -53,3 +53,7 @@ def genirate(tour_id=None):
     return 'asdads', 202
 
 #### Основные методы reque
+
+
+
+### curl

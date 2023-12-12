@@ -9,7 +9,7 @@ docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 >docker ps -a - l
 
 ### собрать имадж
->docker build -t 'flaskdocker' . -
+>docker build -t 'flaskdocker' . - ТОЧКА ОБЯЗАТЕЛЬНА
 
 docker ps -aq вывод все и только id
 sudo docker cp wwi.bak sql1:/var/opt/mssql/backupdocker rm $(docker ps -aq) -удалить все по id
@@ -25,7 +25,7 @@ docker run flask --rm -p:5000:5000 -проброс порта
 docker run -d hello --name hello --rm - запуск в фоне,удалить контейнер после остановки
 
 ### отстановить контейнер
->docker stop nostalgic_hoover - nostalgic_hoover -имя
+>docker stop nostalgic_hoover - nostalgic_hoover - это имя
 
 ### docker volume
 сисок волумов
@@ -220,8 +220,7 @@ docker-compose logs --follow - выводить генерируемы сооб�
 +kerker# docker
  ### images - посмотреть image
  >docker images
- удалить none имиджы
-@@ -171,7 +171,7 @@
+ 
  
  CMD ["python", "main.py"]
  
@@ -266,3 +265,12 @@ docker exec -it db_ps psql -U test
 
 18353286e082 mp_kasud_redis_1
 
+
+#### docker register
+
+sudo docker run -d -p 8989:5000 --restart=always --name registry_8989 registry:2
+sudo systemctl restart docker - сохраняет контейер
+docker run -d -p 8989:5000 -e REGISTRY_AUTH=htpasswd -e REGISTRY_AUTH_HTPASSWD_REALM=Registry -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/
+
+#### запуск c аворизацией
+registry.password -e REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=/data  -v "$PWD/data:/data" -v "$PWD/auth:/auth"  --restart=always  --name registry_8989 registry:2

@@ -247,7 +247,7 @@ Head (голова) находится спереди, а tail (хвост) — 
 
 Команда cat либо выводит содержимое файла на экран, либо конкатенирует несколько файлов. Это зависит от того, сколько файлов передано этой команде при вызове.
 
-
+tail -f /tmp/data - команда будет всегда следить за концом файла. выводи поступающие данный по мере роста файла
 
 #### Команда cat
 
@@ -390,3 +390,18 @@ sudo netstat -pna | grep 6379
 
 -### apt установленные пакеты
 -apt list --installed
+
+### bash
+#### for цикл
+https://andreyex.ru/linux/bash-dlya-tsikla-v-odnoj-stroke/
+for i in {1..5}; do echo "number:$i"; sleep 1; done
+### awk - один из самых мощных инструментов для обработки и фильтрации текста
+https://losst.pro/ispolzovanie-awk-v-linux
+echo 'one two three four' | awk '{print $1}'
+>one
+
+#### запуск команд с интервалом watch -n 1 la -al
+
+
+
+
