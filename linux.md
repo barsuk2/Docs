@@ -28,7 +28,8 @@ sudo update-grub2 - пересобрать меню загрузки
 
 chmod ugo+x mscript.sh -добавим "исполняемость" для юзера, группы, и прочих 
 
-
+#### sudo su
+su postgres - заменть оболочку от postgres
 
 ### юзеры группы
 #### юзеры
@@ -48,7 +49,7 @@ useradd new_group - добавить юзера без всего
 
 su admin - заменяет оболочку (bash) на указаную
 
-sudo usermod admin -aG astra-admin -  добавть пользователя в группу
+sudo usermod admin -aG astra-admin -  добавть пользователя admin в группу astra-admin
 #### добавить пароль
 passwd admin
 

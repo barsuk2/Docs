@@ -11,7 +11,7 @@ psql
 \? for help with psql commands
 \c DBNAME connect to new database (currently "postgres")
 \d list tables, views, and sequences
-
+\du юзерыЫ
 
  ### SQL
  

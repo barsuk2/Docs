@@ -18,7 +18,7 @@ sudo docker cp wwi.bak sql1:/var/opt/mssql/backupdocker rm $(docker ps -aq) -у�
 docker run hello - запуск
 docker run --name hello - запуск
 
-docker run --name deb -i -t debian:latest bash или так
+docker run --name debian -i -t debian:latest bash или так
 
 docker run flask --rm -p:5000:5000 -проброс порта
 

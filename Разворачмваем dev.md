@@ -13,11 +13,13 @@ virtualenvwrapper.
 
 
 1. Ставим системные пакеты
+
 Для Debian:
 $ sudo apt-get install nginx git postgresql python3 python3-dev virtualenvwrapper npm cpp make cmake redis libxt6 libxrender1 libxcomposite1
 В остальных системах ищите соотетствия имён пакетов в репозиториях самостоятельно.
 
 2. Рабочие директории
+
 Создаём директории, которых нет в репозитории (и они помещены в .gitignore):
 $ mkdir -p /srv/biganto.com/bin
 $ mkdir -p /srv/biganto.com/var/assets
@@ -29,6 +31,7 @@ $ mkdir -p /srv/biganto.com/var/purgatory/footages
 (ln -s /mnt/hugeHDD/biganto.com/var /srv/biganto.com/var).
 
 3. Создаём виртуальное окружение python и ставим в него пакеты
+
 Нам нужен питон не ниже версии 3.7.
 $ mkvirtualenv -p `which python3` biganto_com
 (если не работает mkvirtualenv смотри тут)
@@ -44,6 +47,7 @@ MAIL_SINK = ('newbie@biganto.com',) # Пропишите сюда ваш адр�
 ADMIN_BGCOLOR = '#0DEAD0'
 
 5. Создаём и инициализируем базу данных
+
 $ sudo -u postgres psql -c "CREATE USER visual ENCRYPTED PASSWORD 'writecleancode'"
 $ sudo -u postgres psql -c "CREATE DATABASE visual OWNER visual"
 $ alembic upgrade head
