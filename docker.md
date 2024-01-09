@@ -88,7 +88,9 @@ status	Один из created, restarting, running, removing, paused, exited, и�
 ### работаем с redis -p 6379
 
 1. запуск контейрена
+
 docker run -d --name some-redis redis
+
 2. получаем доступ из основной ОС 
 docker inspect some-redis - так можно узнать IP
 redis-cli -h 172.17.0.2 - если установлен redis на main OS
@@ -215,9 +217,12 @@ docker network ls -спсиок сетей
 ### logs
 
 docker-compose logs --follow - выводить генерируемы сообщения
+docker-compose logs -f api - для приложеия api
+
 
 -ker# docker
 +kerker# docker
+ 
  ### images - посмотреть image
  >docker images
  

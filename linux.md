@@ -401,7 +401,8 @@ https://losst.pro/ispolzovanie-awk-v-linux
 echo 'one two three four' | awk '{print $1}'
 >one
 
-#### запуск команд с интервалом watch -n 1 la -al
+#### запуск команд с интервалом 
+watch -n 1 ll
 
 
 

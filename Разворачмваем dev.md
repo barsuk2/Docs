@@ -48,7 +48,7 @@ ADMIN_BGCOLOR = '#0DEAD0'
 
 5. Создаём и инициализируем базу данных
 
-$ sudo -u postgres psql -c "CREATE USER visual ENCRYPTED PASSWORD 'writecleancode'"
+$ sudo -u postgres psql -c "CREATE USER visual ENCRYPTED PASSWORD 'visual'"
 $ sudo -u postgres psql -c "CREATE DATABASE visual OWNER visual"
 $ alembic upgrade head
 
