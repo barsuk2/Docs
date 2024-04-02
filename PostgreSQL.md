@@ -74,3 +74,14 @@ https://postgrespro.ru/docs/postgrespro/10/backup-dump
 >pg_dump bd_name > /home/dir
 ## восстановаление
 psql имя_базы < файл_дампа
+
+
+### Роли
+
+create role имя
+drop role имя
+select rolname from pg_roles;
+psql /du
+alter role egor superuser - добавить атрибут
+
+

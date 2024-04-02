@@ -1,4 +1,5 @@
-# docker
+# images
+
 ### images - посмотреть image
 >docker images
 удалить none имиджы
@@ -9,27 +10,44 @@ docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 >docker ps -a - l
 
 ### собрать имадж
->docker build -t 'flaskdocker' . - ТОЧКА ОБЯЗАТЕЛЬНА
+>docker build -t 'flaskdocker' . - ТОЧКА ОБЯЗАТЕЛЬНА Это путь к докер файлувщслук
 
+### Удалить image
+
+docker images -q -f dangling=true - получить непоименованные по id
+ docker rmi test/coweay-dockerfile:latest
+ docker rmi 10fcec6d95c
+
+# контейнеры
+ыщщso
+ 
 docker ps -aq вывод все и только id
 sudo docker cp wwi.bak sql1:/var/opt/mssql/backupdocker rm $(docker ps -aq) -удалить все по id
 
 ## запуск конейнера
-docker run hello - запуск
+
 docker run --name hello - запуск
 
-docker run --name debian -i -t debian:latest bash или так
+docker run --name debian -it debian:latest bash запуск контенера и подключить к нему констоль
 
 docker run flask --rm -p:5000:5000 -проброс порта
 
-docker run -d hello --name hello --rm - запуск в фоне,удалить контейнер после остановки
+docker run -d hello --name hello --rm - запуск в фоне, удалить контейнер после остановки
+docker ps -aq -f status=exited - спсиок id всех остановленных контейнеров.
 
 ### отстановить контейнер
 >docker stop nostalgic_hoover - nostalgic_hoover - это имя
 
-### docker volume
+### volume
 сисок волумов
 >http://172.17.0.2:5000 
+
+
+### Bind mounts перенаправление какой-то папки  с хоста в контейнер
+* https://fixmypc.ru/post/sozdaem-volume-v-docker-ispolzuia-bind-i-mount/
+
+# docker run --name mp_kasud --rm -p 5000:5000 --mount type=bind,source="$(pwd)"/src, target=/src mp_kasud_im - 
+
 
 ### удалить и оствновить все контейеры
 docker system prune
@@ -39,6 +57,8 @@ docker system prune
 
 ### pull
 docker pull busybox - згрузит контейнер с хаба
+
+
 
 ### dicker-compose
 >docker-compose build - собрать
@@ -62,22 +82,25 @@ sudo docker exec -it sql1 sh
 sudo docker cp wwi.bak sql1:/var/opt/mssql/backup
 
 
-docker run -i -t debian /bin/bash- запустить shell использую контейнер debian
+docker run -it debian /bin/bash- запустить shell использую контейнер debian
+
 docker run -h CONTAINER -i -t debian /bin/bash -зададим имя хоста
+
+
+#### посмотеть инфу по контейнеру
 docker inspect nifty_hellman - подробна информаци  о контейнере
+
 docker inspect youthful_swanson --format '{{json .NetworkSettings.Networks}}' - вывод куста
 
-docker diff nifty_hellman - сравние, какие папки была изменены в работающем еонтейнере
-docker logs nifty_hellman - список всех событий в контейнере
-docker ps -aq -f status=exited - спсиок id всех остановленных контейнеров.
+
+docker diff nifty_hellman - сравние, какие папки была изменены в работающем контейнере
+docker logs nifty_hellman -f - список всех событий в контейнере и ждать обновлений логов
+
+
 ### удалить контейнер
 docker rm -v $(docker ps -aq -f status=exited) - удалить все контейнеры с по списку ID и их тома
 
-### Удалить image
-
-docker images -q -f dangling=true - получить непоименованные по id
- docker rmi test/coweay-dockerfile:latest
- docker rmi 10fcec6d95c4
+4
  
 
 ### docker ps

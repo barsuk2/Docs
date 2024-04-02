@@ -39,6 +39,16 @@ git remote add origin git@github.com:barsuk2/second-site.git
 git push -u origin master
 
 
+### конфигурация github
+#### определить origin
+> git remote add origin git@github.com:username/repository.git
+
+### посмотреть origin 
+> git remote -v
+
+#### переопределить origin
+>git remote set-url origin git@github.com:username/repository.git
+
 #%% md
 
 ### Клонирование репозитория
@@ -388,7 +398,7 @@ git revert во всех остальных случаях
 2. git add
 3. git commit
 
-#%% удалить отслеживание
+# удалить отслеживание
 git rm --cached -r .idea/
 
 
