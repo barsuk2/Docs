@@ -10,7 +10,7 @@ docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 >docker ps -a - l
 
 ### собрать имадж
->docker build -t 'flaskdocker' . - ТОЧКА ОБЯЗАТЕЛЬНА Это путь к докер файлувщслук
+>docker build -t 'flaskdocker' . - ТОЧКА ОБЯЗАТЕЛЬНА Это путь к докер файлу
 
 ### Удалить image
 
@@ -302,3 +302,6 @@ docker run -d -p 8989:5000 -e REGISTRY_AUTH=htpasswd -e REGISTRY_AUTH_HTPASSWD_R
 
 #### запуск c аворизацией
 registry.password -e REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=/data  -v "$PWD/data:/data" -v "$PWD/auth:/auth"  --restart=always  --name registry_8989 registry:2
+
+
+### РЕШЕНИЕ 
