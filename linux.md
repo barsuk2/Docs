@@ -62,7 +62,7 @@ passwd [user] - сменить парол текущему юзеру или use
 usermod -h
 
 #### удалить юзера
-userdel admin
+userdel admin1
 
 
 > ### apt
