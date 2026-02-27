@@ -1,0 +1,21 @@
+{
+  "status": "finish",
+  "message": null,
+  "user_message": null,
+  "sync_id": "45688345-afc7-4b47-af0d-2387ba0b91dv",
+  "synced_at": null,
+  "data": {
+    "items": [
+      {
+        "stages": {
+          "id": 11,
+          "guid": "dcaf4de9-af4b-43b0-8897-af384f2b2a04",
+          "hash": "142291663304184264606816308355817270179"
+        }
+      }
+    ]
+  },
+  "data_key": "any",
+  "status_detail": null,
+  "sync_error": null
+}

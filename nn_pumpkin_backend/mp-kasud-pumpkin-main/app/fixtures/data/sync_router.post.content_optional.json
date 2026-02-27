@@ -1,0 +1,29 @@
+[
+  {
+    "stage": {
+      "id": 11,
+      "created_at": "2022-07-06T14:28:05+03:00",
+      "modified_at": "2022-07-06T14:28:05+03:00",
+      "source_id": 1,
+      "status": "progress",
+      "stage_type_id": 1,
+      "stage_type_name": "Test",
+      "document_id": 1,
+      "route_id": 1,
+      "external_id": "123",
+      "sort_order": 0,
+      "deleted_at": null,
+      "stage_members": [
+        {
+          "id": 2,
+          "sort_order": 0,
+          "member_user_id": 8,
+          "comment": "mmm",
+          "status": "success"
+        }
+      ],
+      "stages_hash": "1231231",
+      "stages_guid": "dcaf4de9-af4b-43b0-8897-af384f2b2a03"
+    }
+  }
+]

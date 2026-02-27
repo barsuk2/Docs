@@ -1,0 +1,79 @@
+{
+  "status": "finish",
+  "message": null,
+  "user_message": null,
+  "sync_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+  "synced_at": null,
+  "data": {
+    "items": [
+      {
+        "document": {
+          "id": 1,
+          "guid": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+          "hash": "142291663304184264606816308355817270179"
+        },
+        "task": {
+          "id": 1,
+          "guid": "3a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+          "hash": "265651022723193251047722193912020743693",
+          "is_viewed": false
+        }
+      },
+      {
+        "document": {
+          "id": 2,
+          "guid": "3a7b8c1d-9e0f-4a4b-5c6d-7e8f9a0b1c2d",
+          "hash": "142291663304184264606816308355817270179"
+        },
+        "task": {
+          "id": 2,
+          "guid": "550e8400-e29b-41d4-a716-446655440000",
+          "hash": "265651022723193251047722193912020743693",
+          "is_viewed": false
+        }
+      },
+      {
+        "document": {
+          "id": 3,
+          "guid": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+          "hash": "142291663304184264606816308355817270179"
+        },
+        "task": {
+          "id": 3,
+          "guid": "123e4567-e89b-12d3-a456-426614174000",
+          "hash": "265651022723193251047722193912020743693",
+          "is_viewed": false
+        }
+      },
+      {
+        "document": {
+          "id": 4,
+          "guid": "9f4e3a2b-1c4d-5e6f-7a8b-9c0d1e2f3a4b",
+          "hash": "142291663304184264606816308355817270179"
+        },
+        "task": {
+          "id": 4,
+          "guid": "a85b870e-3a78-4e54-94ea-e0f6a7257c6e",
+          "hash": "265651022723193251047722193912020743693",
+          "is_viewed": false
+        }
+      },
+      {
+        "document": {
+          "id": 5,
+          "guid": "b3c2d1e0-f9e8-7d6c-5b4a-3a29180716f5",
+          "hash": "142291663304184264606816308355817270179"
+        },
+        "task": {
+          "id": 5,
+          "guid": "d3fd8a7b-6c5e-4f2a-9b1c-8d7e6f5a4b3c",
+          "hash": "265651022723193251047722193912020743693",
+          "is_viewed": false
+        }
+      }
+    ]
+  },
+  "data_key": "any",
+  "status_detail": null,
+  "sync_error": null
+}

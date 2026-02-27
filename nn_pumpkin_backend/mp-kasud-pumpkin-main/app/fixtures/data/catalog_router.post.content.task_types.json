@@ -1,0 +1,866 @@
+[
+  {
+    "id": "1",
+    "source_id": 1,
+    "external_id": "d_1",
+    "name": "Согласование",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "2",
+    "source_id": 1,
+    "external_id": "d_2",
+    "name": "Прием исполнения",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "3",
+    "source_id": 1,
+    "external_id": "d_3",
+    "name": "На исполнении",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "4",
+    "source_id": 1,
+    "external_id": "d_4",
+    "name": "Согласование",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "5",
+    "source_id": 1,
+    "external_id": "d_5",
+    "name": "Предварительное рассмотрение",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "6",
+    "source_id": 1,
+    "external_id": "d_6",
+    "name": "Рассмотрение",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "7",
+    "source_id": 1,
+    "external_id": "d_7",
+    "name": "Подписание",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "8",
+    "source_id": 1,
+    "external_id": "d_8",
+    "name": "Ознакомление с документом",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "9",
+    "source_id": 1,
+    "external_id": "d_9",
+    "name": "Согласование этап №2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "10",
+    "source_id": 1,
+    "external_id": "d_10",
+    "name": "Утверждение",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "11",
+    "source_id": 1,
+    "external_id": "d_11",
+    "name": "Доработка",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "12",
+    "source_id": 1,
+    "external_id": "d_12",
+    "name": "Внутреннее согласование",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "13",
+    "source_id": 1,
+    "external_id": "d_13",
+    "name": "Заочное голосование",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "14",
+    "source_id": 1,
+    "external_id": "d_14",
+    "name": "Поручение",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "15",
+    "source_id": 1,
+    "external_id": "d_15",
+    "name": "Без контроля",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "16",
+    "source_id": 1,
+    "external_id": "d_16",
+    "name": "На исполнении",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "17",
+    "source_id": 1,
+    "external_id": "d_17",
+    "name": "Прием исполнения",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "18",
+    "source_id": 1,
+    "external_id": "d_18",
+    "name": "Прием исполнения",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "19",
+    "source_id": 1,
+    "external_id": "d_19",
+    "name": "На исполнении",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "20",
+    "source_id": 1,
+    "external_id": "d_20",
+    "name": "Согласование № 2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "21",
+    "source_id": 1,
+    "external_id": "d_21",
+    "name": "Внешнее утверждение",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "22",
+    "source_id": 1,
+    "external_id": "d_22",
+    "name": "Регистрация",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "23",
+    "source_id": 1,
+    "external_id": "d_23",
+    "name": "Подготовка проекта протокола",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "24",
+    "source_id": 1,
+    "external_id": "d_24",
+    "name": "Согласование № 1",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "25",
+    "source_id": 1,
+    "external_id": "d_25",
+    "name": "Согласование этап №1",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "26",
+    "source_id": 1,
+    "external_id": "d_26",
+    "name": "Внутреннее согласование этап №2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "27",
+    "source_id": 1,
+    "external_id": "d_27",
+    "name": "Доработка материалов к совещанию",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "28",
+    "source_id": 1,
+    "external_id": "d_28",
+    "name": "Заочное голосование 2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "29",
+    "source_id": 1,
+    "external_id": "d_29",
+    "name": "Ознакомление с РД",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "30",
+    "source_id": 1,
+    "external_id": "d_30",
+    "name": "На исполнении",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "31",
+    "source_id": 1,
+    "external_id": "d_31",
+    "name": "Дополнительное согласование",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "32",
+    "source_id": 1,
+    "external_id": "d_32",
+    "name": "Доработка (отзыв)",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "33",
+    "source_id": 1,
+    "external_id": "d_33",
+    "name": "Предварительное согласование материалов к совещанию",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "34",
+    "source_id": 1,
+    "external_id": "d_34",
+    "name": "Внешнее согласование",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "35",
+    "source_id": 1,
+    "external_id": "d_35",
+    "name": "На исполнении",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "36",
+    "source_id": 1,
+    "external_id": "d_36",
+    "name": "Утверждение переноса срока",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "37",
+    "source_id": 1,
+    "external_id": "d_37",
+    "name": "Утверждение переноса срока",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "38",
+    "source_id": 1,
+    "external_id": "d_38",
+    "name": "Без контроля",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "39",
+    "source_id": 1,
+    "external_id": "d_39",
+    "name": "Нормоконтроль",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "40",
+    "source_id": 1,
+    "external_id": "d_40",
+    "name": "Проверка перед подписанием",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "41",
+    "source_id": 1,
+    "external_id": "d_41",
+    "name": "Внешнее подписание",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "42",
+    "source_id": 1,
+    "external_id": "d_42",
+    "name": "Отправка Адресату",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "43",
+    "source_id": 1,
+    "external_id": "d_43",
+    "name": "Прикрепление скана подписанного документа",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "44",
+    "source_id": 1,
+    "external_id": "d_44",
+    "name": "Внутреннее согласование этап №1",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "48",
+    "source_id": 1,
+    "external_id": "d_48",
+    "name": "Подписание этап №1",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "49",
+    "source_id": 1,
+    "external_id": "d_49",
+    "name": "Согласование №2 этап №1",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "50",
+    "source_id": 1,
+    "external_id": "d_50",
+    "name": "Согласование №2 этап №3",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "51",
+    "source_id": 1,
+    "external_id": "d_51",
+    "name": "Предварительное согласование материалов",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "53",
+    "source_id": 1,
+    "external_id": "d_53",
+    "name": "Согласование этап №3",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "54",
+    "source_id": 1,
+    "external_id": "d_54",
+    "name": "Согласование этап №4",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "55",
+    "source_id": 1,
+    "external_id": "d_55",
+    "name": "Передача документов архивисту организации",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "56",
+    "source_id": 1,
+    "external_id": "d_56",
+    "name": "Передача акта секретарю ЭК",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "57",
+    "source_id": 1,
+    "external_id": "d_57",
+    "name": "Согласование ЭК",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "58",
+    "source_id": 1,
+    "external_id": "d_58",
+    "name": "Передача документов на уничтожение",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "59",
+    "source_id": 1,
+    "external_id": "d_59",
+    "name": "Проставление отметки об уничтожении дел в акте",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "60",
+    "source_id": 1,
+    "external_id": "d_60",
+    "name": "Согласование №2 этап №2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "61",
+    "source_id": 1,
+    "external_id": "d_61",
+    "name": "Предварительное рассмотрение УОРНТ",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "62",
+    "source_id": 1,
+    "external_id": "d_62",
+    "name": "Подписание этап №2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "63",
+    "source_id": 1,
+    "external_id": "d_63",
+    "name": "Проверка данных",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "64",
+    "source_id": 1,
+    "external_id": "d_64",
+    "name": "Предварительное рассмотрение УОРНТ этап №1",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "65",
+    "source_id": 1,
+    "external_id": "d_65",
+    "name": "Согласование № 2 этап №6",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "66",
+    "source_id": 1,
+    "external_id": "d_66",
+    "name": "Согласование № 1 этап №1",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "67",
+    "source_id": 1,
+    "external_id": "d_67",
+    "name": "Согласование руководителем инициатора ЗНС",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "68",
+    "source_id": 1,
+    "external_id": "d_68",
+    "name": "Предварительное рассмотрение УОРНТ этап №2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "69",
+    "source_id": 1,
+    "external_id": "d_69",
+    "name": "Поручение",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "70",
+    "source_id": 1,
+    "external_id": "d_70",
+    "name": "Внутреннее согласование этап №3",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "71",
+    "source_id": 1,
+    "external_id": "d_71",
+    "name": "Внутреннее согласование этап №4",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "72",
+    "source_id": 1,
+    "external_id": "d_72",
+    "name": "Внутреннее согласование этап №5",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "73",
+    "source_id": 1,
+    "external_id": "d_73",
+    "name": "Внутреннее согласование этап №6",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "74",
+    "source_id": 1,
+    "external_id": "d_74",
+    "name": "Внутреннее согласование этап №7",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "75",
+    "source_id": 1,
+    "external_id": "d_75",
+    "name": "Внутреннее согласование этап №8",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "76",
+    "source_id": 1,
+    "external_id": "d_76",
+    "name": "Внутреннее согласование этап №9",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "77",
+    "source_id": 1,
+    "external_id": "d_77",
+    "name": "Внутреннее согласование этап №10",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "78",
+    "source_id": 1,
+    "external_id": "d_78",
+    "name": "Согласование № 2 этап №1",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "79",
+    "source_id": 1,
+    "external_id": "d_79",
+    "name": "Согласование № 2 этап №2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "80",
+    "source_id": 1,
+    "external_id": "d_80",
+    "name": "Согласование № 2 этап №3",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "81",
+    "source_id": 1,
+    "external_id": "d_81",
+    "name": "Согласование № 2 этап №4",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "82",
+    "source_id": 1,
+    "external_id": "d_82",
+    "name": "Согласование № 2 этап №5",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "83",
+    "source_id": 1,
+    "external_id": "d_83",
+    "name": "Согласование этап №5",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "84",
+    "source_id": 1,
+    "external_id": "d_84",
+    "name": "Согласование № 1 этап №2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "85",
+    "source_id": 1,
+    "external_id": "d_85",
+    "name": "Предварительное рассмотрение УОРНТ этап №3",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "86",
+    "source_id": 1,
+    "external_id": "d_86",
+    "name": "Согласование № 1 этап №3",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "87",
+    "source_id": 1,
+    "external_id": "d_87",
+    "name": "Прикрепление скана документа",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "89",
+    "source_id": 1,
+    "external_id": "d_89",
+    "name": "Профильная экспертиза",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "94",
+    "source_id": 1,
+    "external_id": "d_94",
+    "name": "Доработка (Отзыв)",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "150",
+    "source_id": 1,
+    "external_id": "d_150",
+    "name": "Парафирование и подписание",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "151",
+    "source_id": 1,
+    "external_id": "d_151",
+    "name": "Согласование № 2 этап №7",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "152",
+    "source_id": 1,
+    "external_id": "d_152",
+    "name": "Согласование № 2 этап №8",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "153",
+    "source_id": 1,
+    "external_id": "d_153",
+    "name": "Согласование № 2 этап №10",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "154",
+    "source_id": 1,
+    "external_id": "d_154",
+    "name": "Предварительное рассмотрение этап №1",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "155",
+    "source_id": 1,
+    "external_id": "d_155",
+    "name": "Согласование №2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "156",
+    "source_id": 1,
+    "external_id": "d_156",
+    "name": "Предварительное рассмотрение УОРНТ этап №4",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "157",
+    "source_id": 1,
+    "external_id": "d_157",
+    "name": "Предварительное рассмотрение этап №2",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "158",
+    "source_id": 1,
+    "external_id": "d_158",
+    "name": "Предварительное рассмотрение этап №3",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "159",
+    "source_id": 1,
+    "external_id": "d_159",
+    "name": "Согласование сотрудником ДСиФР",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "160",
+    "source_id": 1,
+    "external_id": "d_160",
+    "name": "Согласование этап №10",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "161",
+    "source_id": 1,
+    "external_id": "d_161",
+    "name": "Проверка контрагента",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "162",
+    "source_id": 1,
+    "external_id": "d_162",
+    "name": "Согласование № 2 этап №9",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "163",
+    "source_id": 1,
+    "external_id": "d_163",
+    "name": "Согласование этап №6",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "164",
+    "source_id": 1,
+    "external_id": "d_164",
+    "name": "Согласование (Структурные подразделения)",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "166",
+    "source_id": 1,
+    "external_id": "d_166",
+    "name": "Согласование этап №7",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "167",
+    "source_id": 1,
+    "external_id": "d_167",
+    "name": "Согласование этап №8",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "168",
+    "source_id": 1,
+    "external_id": "d_168",
+    "name": "Согласование этап №9",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "169",
+    "source_id": 1,
+    "external_id": "d_169",
+    "name": "Получение решений органов управления",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "170",
+    "source_id": 1,
+    "external_id": "d_170",
+    "name": "На исполнении",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "171",
+    "source_id": 1,
+    "external_id": "d_171",
+    "name": "Поручение",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "172",
+    "source_id": 1,
+    "external_id": "d_172",
+    "name": "Согласование № 1 этап №6",
+    "level": 0,
+    "deleted_at": null
+  },
+  {
+    "id": "173",
+    "source_id": 1,
+    "external_id": "d_173",
+    "name": "Согласование № 1 этап",
+    "level": 0,
+    "deleted_at": null
+  }
+]

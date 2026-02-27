@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:latest
+    volumes:
+      - ./db_data/:/var/lib/postgresql/data
+    environment:
+        POSTGRES_PASSWORD: postgres
+  web:
+    image: kasud-backend-dummy:latest
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db

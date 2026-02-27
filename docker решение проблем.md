@@ -13,3 +13,8 @@ networks:
         - subnet: 192.168.100.0/24
           gateway: 192.168.100.1
 
+
+### очистить
+docker-compose down # Останавливает и удаляет все контейнеры, сети и тома, определенные в вашем docker-compose.yml
+docker system prune -f № Удаляет неиспользуемые Docker объекты
+sudo systemctl restart docker

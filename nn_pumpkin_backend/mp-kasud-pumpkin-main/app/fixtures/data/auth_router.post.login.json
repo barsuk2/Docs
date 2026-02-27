@@ -1,0 +1,13 @@
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30",
+  "auth_process_token": "auth-token-abc123",
+  "user_id": 1,
+  "source_id": 1,
+  "source_default_timezone": "Europe/Moscow",
+  "source_default_timezone_offset": 180,
+  "detail": "Логин успешный!",
+  "unconfirmed_disclaimers": [],
+  "user_permissions": [],
+  "second_factor_required": false,
+  "second_factor_hint": null
+}

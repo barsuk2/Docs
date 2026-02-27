@@ -1,0 +1,17 @@
+[
+  {
+    "key": "users"
+  },
+  {
+    "key": "document_types"
+  },
+  {
+    "key": "task_types"
+  },
+  {
+    "key": "calendar_off_days"
+  },
+  {
+    "key": "calendar_deadline_days"
+  }
+]

@@ -51,22 +51,18 @@ sudo ip route add 91.209.147.0/24  via 192.168.1.1 dev enp2s0 - добавть �
 sudo ip route del <destination> via <gateway> dev <interface> - удалить
 
 ### пример файла статистечго маршрута /etc/netplan/01-network-manager-all.yaml
-sudo chmod 600 /etc/netplan/01-network-manager-all.yaml
+ip route add 91.209.147.0/24 via 192.168.1.1 dev enp3s0
+#### сброс кеша DNS
+sudo ip route del 91.209.147.0/24 via 192.168.1.1 dev enp3s0
 
 
-network:
-  version: 2
-  renderer: NetworkManager
-  ethernets:
-    enp2s0:
-      dhcp4: yes  # Включение DHCP для получения IP-адреса
-      routes:
-        - to: 91.209.147.0/24  # Диапазон IP-адресов
-          via: 192.168.1.1      # Шлюз для маршрутизации
+#### узнать ip хоста
+dig +short youtube.com
+ip route get 91.209.147.208
 
 
-### сброс кеша DNS
-sudo systemctl restart NetworkManager
+
+
 
 #### Основные флаги:
 UP - Интерфейс включен и активен. Он готов к передаче и приему данных.

@@ -1,0 +1,877 @@
+[
+  {
+    "id": "1",
+    "source_id": 1,
+    "name": "documents",
+    "level": "0",
+    "deleted_at": null
+  },
+  {
+    "id": "2",
+    "source_id": 1,
+    "name": "instructions",
+    "level": "0",
+    "deleted_at": null
+  },
+  {
+    "id": "3",
+    "source_id": 1,
+    "name": "Распорядительные документы",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "4",
+    "source_id": 1,
+    "name": "Приказ",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "5",
+    "source_id": 1,
+    "name": "Приказ по основной деятельности",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "6",
+    "source_id": 1,
+    "name": "Договоры",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "7",
+    "source_id": 1,
+    "name": "Договор",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "8",
+    "source_id": 1,
+    "name": "Расходный",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "9",
+    "source_id": 1,
+    "name": "Техническая документация",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "10",
+    "source_id": 1,
+    "name": "Задание на проектирование КС",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "11",
+    "source_id": 1,
+    "name": "Справочно-информационные документы",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "12",
+    "source_id": 1,
+    "name": "Акты",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "13",
+    "source_id": 1,
+    "name": "Протокол",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "14",
+    "source_id": 1,
+    "name": "Протокол (постоянный) совещания",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "15",
+    "source_id": 1,
+    "name": "Доходный",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "16",
+    "source_id": 1,
+    "name": "Служебные записки",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "17",
+    "source_id": 1,
+    "name": "Служебная записка",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "18",
+    "source_id": 1,
+    "name": "Акт об уничтожении документов",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "19",
+    "source_id": 1,
+    "name": "Распоряжение",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "20",
+    "source_id": 1,
+    "name": "Распоряжение по основной деятельности",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "21",
+    "source_id": 1,
+    "name": "Входящие документы",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "22",
+    "source_id": 1,
+    "name": "Письмо",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "23",
+    "source_id": 1,
+    "name": "Декларация промышленной безопасности",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "24",
+    "source_id": 1,
+    "name": "Организационно-правовые документы",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "25",
+    "source_id": 1,
+    "name": "Должностная инструкция",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "26",
+    "source_id": 1,
+    "name": "Задание на ПИР (проектно-изыскательские работы)",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "27",
+    "source_id": 1,
+    "name": "Планово-программные документы",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "28",
+    "source_id": 1,
+    "name": "Целевая программа",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "29",
+    "source_id": 1,
+    "name": "Поручение (контрольное)",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "30",
+    "source_id": 1,
+    "name": "Поручение",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "31",
+    "source_id": 1,
+    "name": "Исходящие документы",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "32",
+    "source_id": 1,
+    "name": "Протокол (постоянный) заседания коллегиального органа",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "33",
+    "source_id": 1,
+    "name": "Дополнительное соглашение",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "34",
+    "source_id": 1,
+    "name": "Сделка не является Расходной либо Доходной",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "35",
+    "source_id": 1,
+    "name": "Перечень поручений",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "36",
+    "source_id": 1,
+    "name": "Перечень поручений",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "37",
+    "source_id": 1,
+    "name": "Обращения граждан",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "38",
+    "source_id": 1,
+    "name": "Совместный приказ",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "39",
+    "source_id": 1,
+    "name": "Совместный приказ",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "40",
+    "source_id": 1,
+    "name": "Смета целевого проекта",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "41",
+    "source_id": 1,
+    "name": "Смета целевого проекта",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "42",
+    "source_id": 1,
+    "name": "Техническое задание",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "43",
+    "source_id": 1,
+    "name": "Основные технологические решения (ОТР)",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "44",
+    "source_id": 1,
+    "name": "Сделка без оформления договора",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "45",
+    "source_id": 1,
+    "name": "График",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "46",
+    "source_id": 1,
+    "name": "План",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "47",
+    "source_id": 1,
+    "name": "Экспертиза (ОТР)",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "48",
+    "source_id": 1,
+    "name": "Технические условия",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "49",
+    "source_id": 1,
+    "name": "Техническое заключение",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "50",
+    "source_id": 1,
+    "name": "Предписание",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "51",
+    "source_id": 1,
+    "name": "Предписание",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "52",
+    "source_id": 1,
+    "name": "Совместное постановление",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "53",
+    "source_id": 1,
+    "name": "Совместное постановление",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "54",
+    "source_id": 1,
+    "name": "Проектно-конструкторская документация",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "55",
+    "source_id": 1,
+    "name": "Совместное решение",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "56",
+    "source_id": 1,
+    "name": "Совместное решение",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "57",
+    "source_id": 1,
+    "name": "Заключение на ТКП",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "58",
+    "source_id": 1,
+    "name": "Заказ на разработку КД",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "59",
+    "source_id": 1,
+    "name": "Дорожная карта",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "60",
+    "source_id": 1,
+    "name": "Экспертное заключение (приемка НТП)",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "61",
+    "source_id": 1,
+    "name": "Совместное распоряжение",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "62",
+    "source_id": 1,
+    "name": "Совместное распоряжение",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "63",
+    "source_id": 1,
+    "name": "Протокол (временный) совещания по оперативным вопросам",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "64",
+    "source_id": 1,
+    "name": "Распоряжение по административно-хозяйственным вопросам",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "65",
+    "source_id": 1,
+    "name": "Приказ по административно-хозяйственным вопросам",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "66",
+    "source_id": 1,
+    "name": "Протокол (временный) заседания коллегиального органа",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "67",
+    "source_id": 1,
+    "name": "Договоры РОКС",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "68",
+    "source_id": 1,
+    "name": "Типовая форма договора",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "69",
+    "source_id": 1,
+    "name": "Позиция Компании",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "70",
+    "source_id": 1,
+    "name": "Позиция Компании",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "71",
+    "source_id": 1,
+    "name": "Телеграмма",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "72",
+    "source_id": 1,
+    "name": "Трудовая инструкция",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "73",
+    "source_id": 1,
+    "name": "Ответы на обращения граждан",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "74",
+    "source_id": 1,
+    "name": "План-график",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "75",
+    "source_id": 1,
+    "name": "Программа мероприятий",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "76",
+    "source_id": 1,
+    "name": "Экспертное заключение (приемка ПСД)",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "77",
+    "source_id": 1,
+    "name": "Функциональная экспертиза ИПК КД",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "78",
+    "source_id": 1,
+    "name": "Технико-коммерческое предложение",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "79",
+    "source_id": 1,
+    "name": "Проектно-сметная документация",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "80",
+    "source_id": 1,
+    "name": "Порядок премирования",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "81",
+    "source_id": 1,
+    "name": "Отчеты НИР и НТП",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "82",
+    "source_id": 1,
+    "name": "Комплекты документов",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "83",
+    "source_id": 1,
+    "name": "Комплекты документов",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "84",
+    "source_id": 1,
+    "name": "Протокол ИПК_ИК",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "85",
+    "source_id": 1,
+    "name": "Технологическая карта",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "86",
+    "source_id": 1,
+    "name": "Акт комиссионного подписания",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "87",
+    "source_id": 1,
+    "name": "Разработка типовой формы договора",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "88",
+    "source_id": 1,
+    "name": "Технический отчет",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "89",
+    "source_id": 1,
+    "name": "Подготовка материалов к заседаниям Правления и СД",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "90",
+    "source_id": 1,
+    "name": "Пакет вопросов повестки дня",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "91",
+    "source_id": 1,
+    "name": "Перечень",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "92",
+    "source_id": 1,
+    "name": "Учетные документы архива",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "93",
+    "source_id": 1,
+    "name": "Опись дел",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "94",
+    "source_id": 1,
+    "name": "Опись дел постоянного хранения",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "95",
+    "source_id": 1,
+    "name": "Опись дел по личному составу",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "96",
+    "source_id": 1,
+    "name": "Акт о выделении к уничтожению дел",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "97",
+    "source_id": 1,
+    "name": "Акт приема-передачи дел на оперативное хранение",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "98",
+    "source_id": 1,
+    "name": "Опись дел временного (свыше 10 лет) хранения",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "100",
+    "source_id": 1,
+    "name": "Справка о признании/изменении оценочного обязательства по восстановлению окружающей среды",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "101",
+    "source_id": 1,
+    "name": "Документы, издаваемые на основе действующих ЛНА",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "102",
+    "source_id": 1,
+    "name": "НМД, утверждаемый Советом директоров",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "103",
+    "source_id": 1,
+    "name": "Функционально-технические требования",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "104",
+    "source_id": 1,
+    "name": "Перечень аварийного запаса",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "105",
+    "source_id": 1,
+    "name": "Закупочные процедуры",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "106",
+    "source_id": 1,
+    "name": "Протокол закупочной процедуры",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "112",
+    "source_id": 1,
+    "name": "Запрос на страхование",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "113",
+    "source_id": 1,
+    "name": "Служебные записки (подготовленные вне Системы)",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "114",
+    "source_id": 1,
+    "name": "Отчеты ИИ",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "115",
+    "source_id": 1,
+    "name": "Подготовка материалов к заседаниям Правления и СД",
+    "level": "1",
+    "deleted_at": null
+  },
+  {
+    "id": "116",
+    "source_id": 1,
+    "name": "Карточка ИТ-инициативы",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "117",
+    "source_id": 1,
+    "name": "Отчет о проведении авторского надзора",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "150",
+    "source_id": 1,
+    "name": "Задание ГИП (Главный инженер проекта)",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "151",
+    "source_id": 1,
+    "name": "Программа работ КС (КР\\\\ИИ)",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "152",
+    "source_id": 1,
+    "name": "Комплексные инженерные изыскания (КИИ)",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "153",
+    "source_id": 1,
+    "name": "Опытно-промышленные испытания (ОПИ)",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "154",
+    "source_id": 1,
+    "name": "Существенные (основные) условия сделки",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "155",
+    "source_id": 1,
+    "name": "Задание на проектирование РЭН",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "156",
+    "source_id": 1,
+    "name": "Закупочная документация",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "157",
+    "source_id": 1,
+    "name": "Заявка на утверждение потребности в закупке",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "158",
+    "source_id": 1,
+    "name": "Заключение о результатах служебного расследования\\\\служебной проверки",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "159",
+    "source_id": 1,
+    "name": "Правовое заключение",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "160",
+    "source_id": 1,
+    "name": "Карточка ИТ-инициативы",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "161",
+    "source_id": 1,
+    "name": "Отчет о проведении авторского надзора",
+    "level": "2",
+    "deleted_at": null
+  },
+  {
+    "id": "162",
+    "source_id": 1,
+    "name": "Протокол ИПК_ИК (постоянный)",
+    "level": "3",
+    "deleted_at": null
+  },
+  {
+    "id": "163",
+    "source_id": 1,
+    "name": "Протокол ИПК (временный)",
+    "level": "3",
+    "deleted_at": null
+  }
+]

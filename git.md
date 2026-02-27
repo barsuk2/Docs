@@ -80,6 +80,15 @@ git restore b84aea5.txt
 
 #%% md
 
+
+
+#### временая смена HEAD
+git checkout HEAD~1
+##### Возврат 
+git switch -c new_branch Создать ветку из этого места
+git switch - вернуть как было
+
+
 #### Работа с ветками
 ##### Посмотреть список веток
 >git branch
@@ -165,6 +174,10 @@ git stash drop удалить один файл тайнка
 2. склеивание коммитов или объединеи всех коммитов в один [SQUASH]
 
 [master]> git merge lesson3 - слияние ветки lesson3 c master
+
+## отмена слияния из за конфликтов
+git merge --abort
+
 ### Склеиваине коммитов SQUASH
 1.[master]> git merge [моя ветка] --squash
 ##### Данная команда создаст файл в ветке master со всеми измениенями

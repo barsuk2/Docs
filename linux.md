@@ -408,5 +408,7 @@ echo 'one two three four' | awk '{print $1}'
 watch -n 1 ll
 
 
+Удали venv из индекса (но не с диска):
 
+git rm -r --cached venv
 

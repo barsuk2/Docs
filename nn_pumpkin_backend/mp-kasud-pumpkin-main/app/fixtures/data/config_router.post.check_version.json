@@ -1,0 +1,18 @@
+{
+    "config": {
+        "status": "ok",
+        "status_message": null,
+        "actual_version": 72
+    },
+    "application": {
+        "status": "ok",
+        "status_message": null,
+        "actual_version": null,
+        "actual_urls": []
+    },
+    "device": {
+        "status": "ok",
+        "status_message": null,
+        "actual_version": null
+    }
+}
